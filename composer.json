@@ -1,0 +1,51 @@
+{
+    "name": "pschurig/laravel-weatherapi",
+    "description": "A Weatherapi package for Laravel",
+    "keywords": [
+        "philippschurig",
+        "weather",
+        "laravel",
+        "weatherapi",
+        "api"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Schurig",
+            "email": "schurig.philipp@icloud.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "5.8.*|6.*|7.*|8.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhilippSchurig\\LaravelWeatherapi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhilippSchurig\\LaravelWeatherapi\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PhilippSchurig\\LaravelWeatherapi\\WeatherServiceProvider"
+            ],
+            "aliases": {
+                "Weatherapi": "PhilippSchurig\\LaravelWeatherapi\\WeatherapiFacade"
+            }
+        }
+    }
+}
