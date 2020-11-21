@@ -4,7 +4,7 @@ namespace PhilippSchurig\LaravelWeatherapi;
 
 use Illuminate\Support\ServiceProvider;
 
-class WeatherapiServiceProvider extends ServiceProvider
+class WeatherApiServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -13,7 +13,9 @@ class WeatherapiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind('weatherapi',function() {
+            return new WeatherApi();
+        });
     }
 
     /**

@@ -17,27 +17,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Units formatting
-    |--------------------------------------------------------------------------
-    |
-    | Standard, metric, and imperial units are available.
-    | |-----------|---------------|------------|
-    | | Type      |  Temperature  |  Distance  |
-    | |-----------|---------------|------------|
-    | | standard  |  Kelvin       | meter/sec  |
-    | |-----------|---------------|------------|
-    | | metric    |  Celsius      | meter/sec  |
-    | |-----------|---------------|------------|
-    | | imperial  |  Fahrenheit   | miles/hour |
-    | |-----------|---------------|------------|
-    |
-    | For more information visit: https://openweathermap.org/current#other
-    */
-
-    'units' => 'metric',
-
-    /*
-    |--------------------------------------------------------------------------
     | Language
     |--------------------------------------------------------------------------
     |
@@ -57,6 +36,6 @@ return [
     | For more information visit: https://openweathermap.org/current#other
     */
 
-    'language' => 'en',
+    'language' => env('WEATHER_API_LANGUAGE'),
 
 ];

@@ -1,6 +1,6 @@
 {
     "name": "pschurig/laravel-weatherapi",
-    "description": "A Weatherapi package for Laravel",
+    "description": "A simple Weatherapi package for Laravel",
     "keywords": [
         "philippschurig",
         "weather",
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PhilippSchurig\\LaravelWeatherapi\\": "src"
+            "PhilippSchurig\\LaravelWeatherapi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PhilippSchurig\\LaravelWeatherapi\\Tests\\": "tests"
+            "PhilippSchurig\\LaravelWeatherapi\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -41,10 +41,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PhilippSchurig\\LaravelWeatherapi\\WeatherServiceProvider"
+                "PhilippSchurig\\LaravelWeatherapi\\WeatherApiServiceProvider"
             ],
             "aliases": {
-                "Weatherapi": "PhilippSchurig\\LaravelWeatherapi\\WeatherapiFacade"
+                "Weatherapi": "PhilippSchurig\\LaravelWeatherapi\\Support\\WeatherapiFacade"
             }
         }
     }
