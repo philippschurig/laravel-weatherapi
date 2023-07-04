@@ -1,8 +1,7 @@
 {
-    "name": "pschurig/laravel-weatherapi",
+    "name": "philippschurig/laravel-weatherapi",
     "description": "A Weatherapi package for Laravel",
     "keywords": [
-        "philippschurig",
         "weather",
         "laravel",
         "weatherapi",
